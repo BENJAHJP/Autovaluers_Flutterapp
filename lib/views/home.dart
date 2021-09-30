@@ -11,15 +11,15 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        children: [
-          SafeArea(
-            child: Column(
+      body: SafeArea(
+        child: ListView(
+          children: [
+            Column(
               children: [
                 ClipPath(
                   clipper: CustomClipPath(),
                   child: Container(
-                    padding: const EdgeInsets.all(40),
+                    padding: const EdgeInsets.all(30),
                     child: Column(                 
                       children:  [
                         Row(
@@ -83,7 +83,9 @@ class _HomeState extends State<Home> {
                             children: [
                               ElevatedButton(onPressed: (){}, child: const Text('KAX')),
                               const SizedBox(width: 30,),
-                              ElevatedButton(onPressed: (){}, child: const Text('Valuate'))
+                              ElevatedButton(onPressed: (){
+                                Navigator.pushNamed(context, '/Valuate');
+                              }, child: const Text('Valuate'))
                             ],
                           ),
                           Row(
@@ -91,7 +93,9 @@ class _HomeState extends State<Home> {
                             children: [
                               ElevatedButton(onPressed: (){}, child: const Text('KAZ'),),
                               const SizedBox(width: 30,),
-                              ElevatedButton(onPressed: (){}, child: const Text('Valuate'))
+                              ElevatedButton(onPressed: (){
+                                Navigator.pushNamed(context, '/Valuate');
+                              }, child: const Text('Valuate'))
                             ],
                           ),
                           Row(
@@ -141,8 +145,8 @@ class _HomeState extends State<Home> {
                 )
               ],
             ),
-          ),
-        ],
+          ],
+        ),
       )                         
     );
   }

@@ -4,7 +4,7 @@ import 'package:autovaluers/views/valuate.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-      initialRoute: '/Home',
+      initialRoute: '/Login',
       routes: {
         '/Login': (context) => const Login(),
         '/Home' : (context) => const Home(),

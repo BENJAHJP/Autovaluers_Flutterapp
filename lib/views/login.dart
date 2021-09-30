@@ -33,7 +33,9 @@ class _LoginState extends State<Login> {
                       obscureText: true,
                     ),
                     const SizedBox(height: 30,),
-                    ElevatedButton(onPressed: (){}, child: const Text('Log In'), style: ElevatedButton.styleFrom(
+                    ElevatedButton(onPressed: (){
+                      Navigator.pushNamed(context, '/Home');
+                    }, child: const Text('Log In'), style: ElevatedButton.styleFrom(
                       fixedSize: const Size(300, 50),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30))
                     )
