@@ -9,55 +9,214 @@ class Checkboxes extends StatefulWidget {
 
 class _CheckboxesState extends State<Checkboxes> {
   bool isChecked = false;
+  bool isChecked2 = false;
+  bool isChecked3 = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('checkbox'),
       ),
-      body: Column(
+      body: ListView(
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          Column(
             children: [
-              Expanded(
-                child: Container(
-                  padding: const EdgeInsets.all(10),
-                  child: const Text('Does vehicle have any scratched area ?', style: TextStyle(
-                    fontSize: 20, 
-                  ),),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: Container(
+                      padding: const EdgeInsets.all(10),
+                      child: const Text('Does vehicle have any scratched area ?', style: TextStyle(
+                        fontSize: 20, 
+                      ),),
+                    ),
+                  ),
+                  const SizedBox(width: 10,),
+                  Expanded(
+                    child: Checkbox(value: isChecked, onChanged: (bool? value){
+                      setState(() {
+                        isChecked = value!;
+                      });
+                    },
+                    activeColor: Colors.red,
+                    ),
+                  ),
+                  const SizedBox(width: 10,),
+                  Expanded(child: Checkbox(value: isChecked2, onChanged: (bool? value){
+                    setState(() {
+                      isChecked2 = value!;
+                    });
+                  }
+                )
                 ),
-              ),
-              const SizedBox(width: 10,),
-              Expanded(
-                child: Checkbox(value: isChecked, onChanged: (bool? value){
-                  setState(() {
-                    isChecked = value!;
-                  });
-                },
-                activeColor: Colors.red,
+                Expanded(child: Checkbox(value: isChecked3, onChanged: (bool? value){
+                    setState(() {
+                      isChecked3 = value!;
+                    });
+                  }
+                )
                 ),
+                  
+                ],
               ),
-              const SizedBox(width: 10,),
-              Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
-                setState(() {
-                  isChecked = value!;
-                });
-              }
-            )
-            ),
-            Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
-                setState(() {
-                  isChecked = value!;
-                });
-              }
-            )
-            ),
-              
-            ],
-          ),
-          const Divider(color: Colors.black,),
-          Row(
+              const Divider(color: Colors.black,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Expanded(
+                    child: Container(
+                      padding: const EdgeInsets.all(10),
+                      child: const Text('any signs of an accident before ?', style: TextStyle(
+                        fontSize: 20
+                      ),),
+                    ),
+                  ),
+                  Expanded(
+                    child: Checkbox(value: isChecked, onChanged: (bool? value){
+                      setState(() {
+                        isChecked = value!;
+                      });
+                    } ),
+                  ),
+                  Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
+                    setState(() {
+                      isChecked = value!;
+                    });
+                  })),
+                  Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
+                    setState(() {
+                      isChecked = value!;
+                    });
+                  }))
+                ],
+              ),
+              const Divider(color: Colors.black,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Expanded(
+                    child: Container(
+                      padding: const EdgeInsets.all(10),
+                      child: const Text('any signs of an accident before ?', style: TextStyle(
+                        fontSize: 20
+                      ),),
+                    ),
+                  ),
+                  Expanded(
+                    child: Checkbox(value: isChecked, onChanged: (bool? value){
+                      setState(() {
+                        isChecked = value!;
+                      });
+                    } ),
+                  ),
+                  Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
+                    setState(() {
+                      isChecked = value!;
+                    });
+                  })),
+                  Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
+                    setState(() {
+                      isChecked = value!;
+                    });
+                  }))
+                ],
+              ),
+              Divider(color: Colors.black,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Expanded(
+                    child: Container(
+                      padding: const EdgeInsets.all(10),
+                      child: const Text('any signs of an accident before ?', style: TextStyle(
+                        fontSize: 20
+                      ),),
+                    ),
+                  ),
+                  Expanded(
+                    child: Checkbox(value: isChecked, onChanged: (bool? value){
+                      setState(() {
+                        isChecked = value!;
+                      });
+                    } ),
+                  ),
+                  Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
+                    setState(() {
+                      isChecked = value!;
+                    });
+                  })),
+                  Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
+                    setState(() {
+                      isChecked = value!;
+                    });
+                  }))
+                ],
+              ),
+              const Divider(color: Colors.black,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Expanded(
+                    child: Container(
+                      padding: const EdgeInsets.all(10),
+                      child: const Text('any signs of an accident before ?', style: TextStyle(
+                        fontSize: 20
+                      ),),
+                    ),
+                  ),
+                  Expanded(
+                    child: Checkbox(value: isChecked, onChanged: (bool? value){
+                      setState(() {
+                        isChecked = value!;
+                      });
+                    } ),
+                  ),
+                  Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
+                    setState(() {
+                      isChecked = value!;
+                    });
+                  })),
+                  Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
+                    setState(() {
+                      isChecked = value!;
+                    });
+                  }))
+                ],
+              ),
+              const Divider(color: Colors.black,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Expanded(
+                    child: Container(
+                      padding: const EdgeInsets.all(10),
+                      child: const Text('any signs of an accident before ?', style: TextStyle(
+                        fontSize: 20
+                      ),),
+                    ),
+                  ),
+                  Expanded(
+                    child: Checkbox(value: isChecked, onChanged: (bool? value){
+                      setState(() {
+                        isChecked = value!;
+                      });
+                    } ),
+                  ),
+                  Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
+                    setState(() {
+                      isChecked = value!;
+                    });
+                  })),
+                  Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
+                    setState(() {
+                      isChecked = value!;
+                    });
+                  }))
+                ],
+              ),
+              const Divider(color: Colors.black,),
+              Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Expanded(
@@ -87,10 +246,10 @@ class _CheckboxesState extends State<Checkboxes> {
               }))
             ],
           ),
-          const Divider(color: Colors.black,),
-          
-        ],
+            ],
 
+          ),
+        ],
       ),
 
     );
