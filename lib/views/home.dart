@@ -71,76 +71,80 @@ class _HomeState extends State<Home> {
                           ],
                         ),
                 const SizedBox(height: 30,),
-                Container(
-                  width: 300,
-                  height: 200,
-                  child: ListView(
-                    children: [
-                      Column(
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              ElevatedButton(onPressed: (){}, child: const Text('KAX')),
-                              const SizedBox(width: 30,),
-                              ElevatedButton(onPressed: (){
-                                Navigator.pushNamed(context, '/Valuate');
-                              }, child: const Text('Valuate'))
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              ElevatedButton(onPressed: (){}, child: const Text('KAZ'),),
-                              const SizedBox(width: 30,),
-                              ElevatedButton(onPressed: (){
-                                Navigator.pushNamed(context, '/Valuate');
-                              }, child: const Text('Valuate'))
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              ElevatedButton(onPressed: (){}, child: const Text('KAS')),
-                              const SizedBox(width: 30,),
-                              ElevatedButton(onPressed: (){}, child: const Text('Valuate'))
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              ElevatedButton(onPressed: (){}, child: const Text('KAX')),
-                              const SizedBox(width: 30,),
-                              ElevatedButton(onPressed: (){}, child: const Text('Valuate'))
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              ElevatedButton(onPressed: (){}, child: const Text('KAX')),
-                              const SizedBox(width: 30,),
-                              ElevatedButton(onPressed: (){}, child: const Text('Valuate'))
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              ElevatedButton(onPressed: (){}, child: const Text('KAX')),
-                              const SizedBox(width: 30,),
-                              ElevatedButton(onPressed: (){}, child: const Text('Valuate'))
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              ElevatedButton(onPressed: (){}, child: const Text('KAX')),
-                              const SizedBox(width: 30,),
-                              ElevatedButton(onPressed: (){}, child: const Text('Valuate'))
-                            ],
-                          ),
-                        ],
-                      ),
-                    ],
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(30),
+                  child: Container(
+                    color: Colors.red,
+                    width: 300,
+                    height: 200,
+                    child: ListView(
+                      children: [
+                        Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                ElevatedButton(onPressed: (){}, child: const Text('KAX')),
+                                const SizedBox(width: 30,),
+                                ElevatedButton(onPressed: (){
+                                  Navigator.pushNamed(context, '/Valuate');
+                                }, child: const Text('Valuate'))
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                ElevatedButton(onPressed: (){}, child: const Text('KAZ'),),
+                                const SizedBox(width: 30,),
+                                ElevatedButton(onPressed: (){
+                                  Navigator.pushNamed(context, '/Valuate');
+                                }, child: const Text('Valuate'))
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                ElevatedButton(onPressed: (){}, child: const Text('KAS')),
+                                const SizedBox(width: 30,),
+                                ElevatedButton(onPressed: (){}, child: const Text('Valuate'))
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                ElevatedButton(onPressed: (){}, child: const Text('KAX')),
+                                const SizedBox(width: 30,),
+                                ElevatedButton(onPressed: (){}, child: const Text('Valuate'))
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                ElevatedButton(onPressed: (){}, child: const Text('KAX')),
+                                const SizedBox(width: 30,),
+                                ElevatedButton(onPressed: (){}, child: const Text('Valuate'))
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                ElevatedButton(onPressed: (){}, child: const Text('KAX')),
+                                const SizedBox(width: 30,),
+                                ElevatedButton(onPressed: (){}, child: const Text('Valuate'))
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                ElevatedButton(onPressed: (){}, child: const Text('KAX')),
+                                const SizedBox(width: 30,),
+                                ElevatedButton(onPressed: (){}, child: const Text('Valuate'))
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 )
               ],
