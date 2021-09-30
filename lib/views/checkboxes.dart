@@ -87,7 +87,8 @@ class _CheckboxesState extends State<Checkboxes> {
               }))
             ],
           ),
-          const Divider(color: Colors.black,)
+          const Divider(color: Colors.black,),
+          
         ],
 
       ),
