@@ -249,6 +249,14 @@ class _CheckboxesState extends State<Checkboxes> {
             ],
 
           ),
+          const Divider(color: Colors.black,),
+          const SizedBox(height: 10,),
+          ElevatedButton(onPressed: (){}, child: const Text('Next'), style:ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
+            fixedSize: const Size(50, 50)
+          ),
+        ),
+        const SizedBox(height: 30,)
         ],
       ),
 
