@@ -11,6 +11,9 @@ class _ValuateState extends State<Valuate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Valuation step 1 out of 3'),
+      ),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(30),
@@ -137,7 +140,9 @@ class _ValuateState extends State<Valuate> {
               ),
             ),
             const SizedBox(height: 15),
-            ElevatedButton(onPressed: (){}, child: const Text(
+            ElevatedButton(onPressed: (){
+              Navigator.pushNamed(context, '/Checkboxes');
+            }, child: const Text(
               'Next',
             ),style: ElevatedButton.styleFrom(
               fixedSize: const Size(30, 60),

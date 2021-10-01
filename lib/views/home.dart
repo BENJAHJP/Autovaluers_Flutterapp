@@ -19,7 +19,7 @@ class _HomeState extends State<Home> {
                 ClipPath(
                   clipper: CustomClipPath(),
                   child: Container(
-                    padding: const EdgeInsets.all(30),
+                    padding: const EdgeInsets.all(20),
                     child: Column(                 
                       children:  [
                         Row(
@@ -29,7 +29,7 @@ class _HomeState extends State<Home> {
                             ),
                             const SizedBox(width: 20,),
                             const Text('Benjamin Muthui'),
-                            const SizedBox(width: 60,),
+                            const SizedBox(width: 100,),
                             InkWell(child: const Icon(
                               Icons.logout
                               ), onTap: (){},

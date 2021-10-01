@@ -15,7 +15,7 @@ class _CheckboxesState extends State<Checkboxes> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('checkbox'),
+        title: const Text('Valuation step 2 out of 3'),
       ),
       body: ListView(
         children: [
@@ -122,7 +122,7 @@ class _CheckboxesState extends State<Checkboxes> {
                   }))
                 ],
               ),
-              Divider(color: Colors.black,),
+              const Divider(color: Colors.black,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -226,24 +226,24 @@ class _CheckboxesState extends State<Checkboxes> {
                     fontSize: 20
                   ),),
                 ),
-              ),
-              Expanded(
+               ),
+               Expanded(
                 child: Checkbox(value: isChecked, onChanged: (bool? value){
                   setState(() {
                     isChecked = value!;
                   });
                 } ),
-              ),
-              Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
+                ),
+                Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
                 setState(() {
                   isChecked = value!;
                 });
-              })),
-              Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
-                setState(() {
-                  isChecked = value!;
-                });
-              }))
+                })),
+                Expanded(child: Checkbox(value: isChecked, onChanged: (bool? value){
+                  setState(() {
+                    isChecked = value!;
+                  });
+                }))
             ],
           ),
             ],
@@ -251,7 +251,9 @@ class _CheckboxesState extends State<Checkboxes> {
           ),
           const Divider(color: Colors.black,),
           const SizedBox(height: 10,),
-          ElevatedButton(onPressed: (){}, child: const Text('Next'), style:ElevatedButton.styleFrom(
+          ElevatedButton(onPressed: (){
+            Navigator.pushNamed(context, '/Images');
+          }, child: const Text('Next'), style:ElevatedButton.styleFrom(
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
             fixedSize: const Size(50, 50)
           ),

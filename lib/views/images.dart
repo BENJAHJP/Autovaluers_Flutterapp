@@ -11,16 +11,63 @@ class _ImagesState extends State<Images> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Image uploading part 3 out of 3'),
+      ),
       body: Column(
         children: [
-          Container(
-            padding: const EdgeInsets.all(20),
-            width: 20,
-            height: 3,
-            child: const Text('Try me'),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(30),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      color: Colors.grey,
+                      width: 150,
+                      height: 200,
+                    ),
+                    const SizedBox(width: 40,),
+                    FloatingActionButton(onPressed: (){}, child: const Icon(
+                      Icons.camera_alt
+                    ),),
+                    const SizedBox(width: 10,),
+                    FloatingActionButton(onPressed: (){}, child: const Icon(
+                      Icons.image
+                    ),)
+                  ],
+                ),
+              ),
+              
+            ]
           ),
+           Row(
+             mainAxisAlignment: MainAxisAlignment.center,
+             children: [
+               Container(
+                 color: Colors.grey,
+                 width: 150,
+                 height: 200,
+               ),
+               const SizedBox(width: 40,),
+                FloatingActionButton(onPressed: (){}, child: const Icon(
+                  Icons.camera_alt
+                ),),
+                const SizedBox(width: 10,),
+                FloatingActionButton(onPressed: (){}, child: const Icon(
+                  Icons.image
+                ),)
+             ],
+           ),
         ],
       ),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        
+      }, child: const Icon(
+        Icons.upload
+      ),),
     );
   }
 }
